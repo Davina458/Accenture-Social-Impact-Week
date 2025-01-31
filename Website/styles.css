@@ -1,0 +1,512 @@
+body {
+  margin: 0rem;
+  padding: 0rem;
+  background-color: black;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  background: linear-gradient(to bottom, black, #a001ff);
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.resource-grid {
+  padding-top: 2rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between sections */
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.resource-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centres content horizontally */
+  text-align: center; /* Ensures text stays centred */
+  max-width: 18.75rem; 
+}
+
+.resources {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 1.3rem; /* Rounded corners */
+  object-fit: cover; /* Ensures images don’t get distorted */
+  border: 0.15rem solid white; /* White border around the image */
+}
+
+.resource-item {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+}
+
+#mainHeaderResources img {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.sponsersFooter {
+  padding-left: 3rem;
+  padding-top: 0.5rem;
+}
+
+.followFooter {
+  padding-left: 6rem;
+  padding-top: 0.5rem;
+}
+
+.contactFooter {
+  padding-left: 12rem;
+  padding-top: 0.5rem;
+  color: white;
+}
+
+a:visited {
+  color: white; /* Ensure the visited state is also white */
+  text-decoration: none; /* Remove the underline */
+}
+
+.Google,
+.Microsoft,
+.Oracle {
+  padding: 1rem;
+  height: 3rem;
+}
+
+.Instagram,
+.Facebook,
+.X {
+  padding: 1rem;
+  height: 3rem;
+}
+
+.Prospect {
+  text-align: center;
+}
+
+#resourcesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  max-width: 100%;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  gap: 5rem; /* Space between items */
+  align-items: center; /* Ensures text and image align */
+}
+
+#resourcesMainImage {
+  width: 12rem;
+  height: auto;
+  display: block;
+  padding-top: 4rem;
+}
+
+#img1 {
+  border: 0.15rem solid white;
+  border-radius: 1rem;
+}
+
+nav {
+  background-color: black; /* Optional: Navbar background colour */
+  width: 100%; /* Full width of the viewport */
+  height: 6rem; /* Height of the navbar */
+  display: flex; /* Flexbox layout */
+}
+
+.header-logo {
+  width: auto;
+  margin-left: 22rem;
+  padding-top: 1.5rem;
+}
+
+.menu-toggle {
+  background-color: white;
+  display: flex; /* Flexbox layout */
+  width: 3rem; /* 80% of the viewport width */
+  height: 3rem; /* Height of the navbar */
+  margin-left: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+/* The side sheet (hidden by default) */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -15.625rem; /* Initially hidden off-screen */
+  height: 100%;
+  width: 15.625rem; /* Width of the menu */
+  background-color: black; /* Menu background colour */
+  transition: left 0.3s ease-in-out; /* Smooth sliding animation */
+  padding-top: 2rem;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu li {
+  padding: 1rem;
+  text-align: center;
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  display: block;
+}
+
+/* When the side menu is active (sliding in) */
+.side-menu.open {
+  left: 0; /* Slide the menu in */
+}
+
+/* Close button inside the menu */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+#img1 {
+  float: left;
+  width: 190%;
+}
+
+/* FAQ's styling */
+#faq_description {
+  text-align: center;
+  padding-right: 8rem;
+  padding-left: 8rem;
+}
+
+.faq {
+  text-align: center;
+  padding: 1rem;
+}
+
+#faq {
+  border: 0.125rem solid #333;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+#faq_image_box {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+
+#faq_image {
+  width: 40%;
+  background: #000;
+  justify-content: center;
+  padding-bottom: 2rem;
+  border: 0.15rem solid white;
+  border-radius: 2.5rem;
+}
+
+#faq_description {
+  text-align: center;
+}
+
+/* about us */
+#AboutUs {
+  text-align: center;
+}
+
+#AboutUs_description {
+  text-align: center;
+}
+
+
+.homepage-intro  {
+  text-align: center;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+#homepage-banner{
+  text-align: center;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 2rem;
+}
+
+#homepage-banner-image{
+  border: 0.08rem solid white;
+  border-radius: 1rem;
+}
+
+
+#reach-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centres content horizontally */
+  justify-content: center; /* Centres content vertically if needed */
+  text-align: center;
+  background: linear-gradient(to bottom, black, black, #a001ff);
+  border: 0.1rem solid white;
+  border-radius: 1.5rem;
+  padding-bottom:2rem;
+
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 1rem;
+}
+/*image slider*/
+
+#slider-container {
+  width: 30vw; /* Takes up 1/3 of the viewport width */
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto; /* Centers the slider horizontally */
+}
+#slider img{
+    border-radius: 9%;
+    padding-bottom: 0.5rem;
+    
+    
+}
+
+#slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+#slider .slide {
+  width: 100%;
+  height: auto;
+}
+
+.content img {
+    display: block;       /* Make the image a block-level element */
+    margin: 0 auto;  
+
+}
+#content_image{
+  border-radius: 0.5rem;
+  border: 0.1rem solid white;
+  background-color: rgb(26, 23, 27);
+}
+
+#slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(80, 31, 72);
+  border: none;
+  padding: 0.625rem;
+  cursor: pointer;
+  z-index: 100;
+}
+#AbtUsphoto {
+   align-items: center;
+}
+
+#slider .prev {
+  left: 0.625rem;
+}
+
+#slider .next {
+  right: 0.625rem;
+}
+/* Ensures form fields are centred */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+.input-field {
+  padding: 0.35rem;
+  margin-top: 0.25rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid white;
+  background-color: rgb(26, 23, 27);
+  color: white;
+  width: 100%;
+  max-width: 25rem;
+  text-align: center; /* Ensures text inside the input is also centred */
+}
+
+/* Change background colour on hover */
+.input-field:hover {
+  background-color: #ffffff; /* Dark grey, but you can change this */
+  color: black; /* Changes text colour to black */
+  border
+}
+
+#contact-button{
+  background-color: #4c1c68;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 10rem;
+  cursor: pointer;
+  border: 0.1rem solid white;
+  color: black;                  
+  border: 0.1rem solid black;
+  background-color: white;
+}
+
+#contact-button:hover, contact-button:active {     /* Purple background on hover or click */
+  background-color: #4c1c68;
+  color: white;
+  border: 0.1rem solid white;
+}
+
+
+
+.timeline {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.342);
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 56.25rem; /* 900px / 16 = 56.25rem */
+}
+
+/* Flexbox to align timeline items horizontally */
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Styles for each timeline item */
+.timeline-item {
+  position: relative;
+  width: 18%;
+  text-align: center;
+}
+
+/* Styling for day labels above the line */
+.timeline-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Creates the dots */
+.timeline-dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: rgb(71, 0, 85);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0.1875rem solid white; /* 3px / 16 = 0.1875rem */
+}
+
+/* Positions descriptions below the timeline */
+.timeline-content {
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+}
+
+/* Dotted horizontal line */
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 0.3125rem; /* 5px / 16 = 0.3125rem */
+  left: 5%;
+  width: 90%;
+  height: 0.1875rem; /* 3px / 16 = 0.1875rem */
+  background: repeating-linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255) 0.625rem, transparent 0.625rem, transparent 1.25rem);
+}
+
+#timeline-header {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.next {
+  background-color: white;
+  border: 0.1rem solid black;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 40%;
+  transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition */
+}
+
+.next:hover {
+  background-color: rgb(83, 28, 100); /* Purple background */
+  border: 0.1rem solid rgb(255, 255, 255); /* Purple border */
+  color: white;
+}
+
+.prev {
+  background-color: white;
+  border: 0.1rem solid black;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 40%;
+  transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition */
+}
+
+.prev:hover {
+  background-color: rgb(83, 28, 100); /* Purple background */
+  border: 0.1rem solid rgb(255, 255, 255); /* Purple border */
+  color: white;
+}
+
+#core-values{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(to bottom, black, #a001ff);
+  border: 0.08rem solid white;
+  border-radius: 1.5rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
